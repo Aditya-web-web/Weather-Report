@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#city{
+    text-transform: capitalize;
+}
+input{
+    outline: 0;
+}
+
+
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+    input[type="text"] {
+        width: 83%;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    button {
+        width: 100%;
+    }
+    img {
+        width: 170px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .flex-nowrap {
+        padding: 40px 10px 0px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #a {
+        margin: 0px 40px 0px 52px;
+        padding: 0;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    #container {
+        width: 60%;
+        height: auto;
+        padding: 24px;
+        border-radius: 20px;
+    }
+    input[type="text"] {
+        width: 80%;
+        padding: 15px 0px;
+        padding-left: 25px;
+        font-size: 2rem;
+        border-radius: 3rem;
+    }
+    button {
+        width: 100%;
+        height: 70px;
+        font-size: 2rem;
+        padding: 40px 35px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 250px;
+        height: 310px;
+    }
+    #a1{
+        display: block;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: auto;
+    }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .flex-nowrap {
+        font-size: larger;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 20px;
+    }
+    #a {
+        margin: 0px 42px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    #container {
+        width: 30%;
+        height: auto;
+        padding: 32px;
+    }
+    input[type="text"] {
+        width: 86%;
+    }
+    button {
+        width: 15%;
+    }
+    img {
+        width: 120px;
+        height: 170px;
+    }
+    #a1 {
+        display: block;
+    }
+    h1 {
+        font-size: 4rem;
+        margin: auto;
+    }
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: auto;
+    }
+    .flex-nowrap {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #a {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+}
+
