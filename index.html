@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Updates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body class="bg-slate-900 flex justify-center items-center h-screen">
+    <div class="h-2/3 w-3/7 bg-gradient-to-br from-emerald-400 to-indigo-500 rounded-xl p-8" id="container">
+        <input type="text" placeholder="Search cities"
+            class="rounded-3xl py-2 mr-2 w-64 pl-5 placeholder:font-semibold">
+        <button class="bg-white py-2 w-10 rounded-full"><i class="fa-solid fa-magnifying-glass opacity-50"></i></button>
+        <img src="sun.png" alt="sun image" class="m-auto pt-10" id="img">
+        <div class="flex flex-wrap justify-center" id="a1">
+            <h1 class="text-6xl text-white font-semibold pt-6 px-16 text-center" id="temp">22&deg;C</h1>
+            <h2 class="text-3xl text-white font-medium pt-6 px-8" id="city">berlin</h2>
+        </div>
+
+        <div class="flex flex-nowrap pt-8 pl-3">
+            <div class="flex flex-nowrap">
+                <img src="humidity.png" alt="humidity" class="h-8 w-8 pt-2">
+                <p class="text-2xl font-semibold text-white" id="humidity">50</p>
+                <p class="text-2xl font-semibold text-white">%</p>
+            </div>
+            <div class="flex flex-nowrap pl-20">
+                <img src="wind.png" alt="wind speed" class="h-8 w-8">
+                <p class="text-2xl font-semibold text-white" id="wind">10</p>
+                <p class="text-2xl font-semibold text-white"> Km/h</p>
+            </div>
+        </div>
+        <div class="flex flex-nowrap space-x-[98px] pl-11 text-white" id="a">
+            <h3>Humidity</h3>
+            <h3>Wind speed</h3>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
